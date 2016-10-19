@@ -69,22 +69,6 @@ a {
     text-decoration: none !important;
 }
 
-/*.userInput {
-  width: 86%;
-  height: 70px;
-  margin-left: 7%;
-  margin-top: 50px;
-  padding-top: 5px !important;
-  padding-left: 5px !important;
-  font-family: verdana;
-  font-stretch: wider;
-  font-size: 16px;
-  color: #c09f80 !important;
-  font-weight: 300;
-  background: transparent;
-  border: 3px solid  black;
-}*/
-
 .inputParts {
     margin-top: 40px;
     margin-left: 10%;
@@ -103,7 +87,7 @@ a {
   width: 85%;
   font-family: verdana;
   font-stretch: wider;
-  font-size: 24px;
+  font-size: 1.4em !important;
   color: #c09f80 !important;
   height: 50px;
   font-weight: 300;
@@ -125,8 +109,9 @@ a {
  display: none;
  min-width: 250px;
  margin-left: -125px;
- background-color: #333;
- color: #fff;
+ background-color: rgb(245, 130, 33);
+ color: white;
+ text-shadow: 1px 1px black;
  text-align: center;
  border-radius: 2px;
  padding: 16px;
@@ -137,28 +122,45 @@ a {
 }
 
 #map {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 5%;
+  margin-bottom: 40px !important;
   height: 250px;
   width: 90%;
 }
 
 #personsList {
-  padding-left: 5px;
   padding-top: 5px;
   margin-top: 10px;
   margin-left: 5%;
   height: 330px;
   width: 90%;
-  border: 2px solid #d7cec7;
-  background-color: #d7cec7;
 }
 
-.personsList li {
-  padding-bottom: 3px;
-  color: black;
-  font-size: 20px;
-  font-weight: 200;
+#personsList a {
+  color: #463A30 !important;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #c09f80 !important;
+   border: none !important;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   background-color: rgb(245, 130, 33) !important;
+   border: none !important;
+}
+
+.table-striped > thead {
+   background-color: rgb(245, 130, 33) !important;
+   border: none !important;
+}
+
+.deliveryBoys {
+  margin-top: 25px;
+  margin-left: 16px;
+  color: white;
+  text-align: left;
 }
 
 ::-webkit-input-placeholder {

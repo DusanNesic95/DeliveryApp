@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  var type = "";
+  var type = localStorage.getItem('type');
   var name = "";
   var number = "";
 
   $("#firstOpt").click(function() {
-    type = "deliver";
+    localStorage.setItem('type', 'deliver');
   });
 
   $("#secondOpt").click(function() {
-    type = "receiver";
+    localStorage.setItem('type', 'receive');
   });
 
   $("#submitBtn").click(function() {
@@ -19,7 +19,11 @@ $(document).ready(function() {
           $("#emptyFields").fadeIn().delay(1300).fadeOut(300);
       });
     } else {
-      window.location.href = "nearbyPerson.html";
+      if (type == "deliver") {
+        window.location.href = "nearbyReceive.html";
+      } else {
+        window.location.href = "nearbyDelivery.html";
+      }
     }
   });
 });
