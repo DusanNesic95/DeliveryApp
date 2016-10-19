@@ -1,23 +1,64 @@
 /* Empty. Add your own CSS if you like */
 body {
-  background-color: #984B43;
+  background-image: url("../img/redPatternBlurMore.jpg");
+  background-size: 300%;
+  background-repeat: no-repeat;
+  /*background-color: red;*/
 }
 
 .firstScreenBtn {
-  background-color: #c09f80;
+  background-image: url("../img/deliver.jpg");
+  background-size: 180%;
+  background-position: left 50%;
+  background-repeat: no-repeat;
   margin-left: 7%;
   margin-bottom: 40px;
   width: 86%;
-  height: 70px;
-  color: #d7cec7;
-  font-size: 32px;
-  text-shadow: 1px 1px #d7cec7;
+  height: 90px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 1px black;
   display: block;
   border-radius: 8px;
+  border: none;
+}
+
+.screenBtn {
+  background-color: rgb(245, 130, 33);
+  background-size: 180%;
+  background-position: left 50%;
+  background-repeat: no-repeat;
+  margin-left: 7%;
+  margin-bottom: 40px;
+  width: 86%;
+  height: 90px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 1px black;
+  display: block;
+  border-radius: 8px !important;
+  border: none;
+}
+
+.secondScreenBtn {
+  background-image: url("../img/receive.jpg");
+  background-size: 130%;
+  background-position: left 30%;
+  background-repeat: no-repeat;
+  margin-left: 7%;
+  margin-bottom: 40px;
+  width: 86%;
+  height: 90px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1.5px 1.5px black;
+  display: block;
+  border-radius: 8px;
+  border: none;
 }
 
 #logo {
-  margin-bottom: 90px;
+  margin-bottom: 65px;
   margin-top: 70px;
   width: 70%;
   height: 180px;
@@ -70,7 +111,54 @@ a {
 }
 
 .infoPanel {
-    margin-top: 150px;
+    margin-top: 100px;
+}
+
+.formType {
+  text-align: center;
+  color: white;
+  text-shadow: 1.5px 1.5px black;
+  margin-top: 100px !important;
+}
+
+#emptyFields {
+ display: none;
+ min-width: 250px;
+ margin-left: -125px;
+ background-color: #333;
+ color: #fff;
+ text-align: center;
+ border-radius: 2px;
+ padding: 16px;
+ position: fixed;
+ z-index: 2147483646;
+ left: 50%;
+ bottom: 30px;
+}
+
+#map {
+  margin-top: 30px;
+  margin-left: 5%;
+  height: 250px;
+  width: 90%;
+}
+
+#personsList {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-top: 10px;
+  margin-left: 5%;
+  height: 330px;
+  width: 90%;
+  border: 2px solid #d7cec7;
+  background-color: #d7cec7;
+}
+
+.personsList li {
+  padding-bottom: 3px;
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
 }
 
 ::-webkit-input-placeholder {
