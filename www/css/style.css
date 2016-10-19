@@ -1,1 +1,90 @@
 /* Empty. Add your own CSS if you like */
+body {
+  background-color: #984B43;
+}
+
+.firstScreenBtn {
+  background-color: #c09f80;
+  margin-left: 7%;
+  margin-bottom: 40px;
+  width: 86%;
+  height: 70px;
+  color: #d7cec7;
+  font-size: 32px;
+  text-shadow: 1px 1px #d7cec7;
+  display: block;
+  border-radius: 8px;
+}
+
+#logo {
+  margin-bottom: 90px;
+  margin-top: 70px;
+  width: 70%;
+  height: 180px;
+  margin-left: 15%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*.userInput {
+  width: 86%;
+  height: 70px;
+  margin-left: 7%;
+  margin-top: 50px;
+  padding-top: 5px !important;
+  padding-left: 5px !important;
+  font-family: verdana;
+  font-stretch: wider;
+  font-size: 16px;
+  color: #c09f80 !important;
+  font-weight: 300;
+  background: transparent;
+  border: 3px solid  black;
+}*/
+
+.inputParts {
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 80%;
+    height: 60px;
+    color: white;
+    border: 2px solid #c09f80;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.userInput {
+  padding-top: 15px !important;
+  padding-left: 15px !important;
+  width: 85%;
+  font-family: verdana;
+  font-stretch: wider;
+  font-size: 24px;
+  color: #c09f80 !important;
+  height: 50px;
+  font-weight: 300;
+  background: transparent;
+}
+
+.infoPanel {
+    margin-top: 150px;
+}
+
+::-webkit-input-placeholder {
+   color: #c09f80 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #c09f80 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #c09f80 !important;
+}
+
+:-ms-input-placeholder {
+   color: #c09f80 !important;
+}
