@@ -1,25 +1,24 @@
 /* Empty. Add your own CSS if you like */
 body {
-  background-image: url("../img/redPatternBlurMore.jpg");
-  background-size: 300%;
+  background-image: url("../img/rozepozadina.png");
+  background-size: 100%;
   background-repeat: no-repeat;
-  /*background-color: red;*/
+  /*background-color: white;*/
 }
 
 .firstScreenBtn {
-  background-image: url("../img/deliver.jpg");
-  background-size: 180%;
-  background-position: left 50%;
+  background-image: url("../img/rozedugme.png");
+  background-size: 1000%;
+  background-position: 20% 70%;
   background-repeat: no-repeat;
-  margin-left: 7%;
-  margin-bottom: 40px;
-  width: 86%;
-  height: 90px;
-  color: white;
-  font-size: 30px;
-  text-shadow: 1px 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 50px;
+  color: rgb(172, 84, 84);
+  font-size: 18px;
   display: block;
-  border-radius: 8px;
   border: none;
 }
 
@@ -57,11 +56,36 @@ body {
   border: none;
 }
 
+#thex {
+  background-image: url("../img/rozexic.png");
+  background-size: 400%;
+  background-position: 9% 19%;
+  width: 90%;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#company {
+  background-image: url("../img/cakna.png");
+  background-size: 550%;
+  background-position: 49% 25%;
+  width: 85%;
+  height: 100px;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #logo {
-  margin-bottom: 65px;
-  margin-top: 70px;
+  background-image: url("../img/soda.png");
+  background-size: 550%;
+  background-position: 13% 49%;
+  margin-bottom: 60px;
+  margin-top: -10px;
   width: 70%;
-  height: 180px;
+  height: 210px;
   margin-left: 15%;
 }
 
