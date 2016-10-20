@@ -1,0 +1,68 @@
+/* Empty. Add your own CSS if you like */
+body {
+  background-image: url("../img/zutapozadina.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#map {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-bottom: 40px !important;
+  height: 250px;
+  width: 90%;
+}
+
+#personsList {
+  padding-top: 5px;
+  margin-top: 10px;
+  /*margin-left: 5%;*/
+  height: 330px;
+  width: 100%;
+}
+
+.deliveryBoys {
+  margin-top: 60px;
+  color: rgb(164, 153, 123);
+  text-align: center;
+}
+
+#thex {
+  background-image: url("../img/zadnjixic.png");
+  background-size: 400%;
+  background-position: 91% 19%;
+  width: 90%;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#company {
+  background-image: url("../img/cakna.png");
+  background-size: 550%;
+  background-position: 49% 25%;
+  width: 85%;
+  height: 100px;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: rgb(251, 238, 205) !important;
+   color: rgb(164, 153, 123) !important;
+   border: none !important;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   background-color: rgb( 249, 240, 217) !important;
+   color: rgb(164, 153, 123) !important;
+   border: none !important;
+}
+
+.table-striped > thead {
+   /*background-color: rgb(245, 130, 33) !important;
+   border: none !important;*/
+   display: none !important;
+}

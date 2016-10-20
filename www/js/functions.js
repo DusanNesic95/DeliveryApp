@@ -22,7 +22,7 @@ $(document).ready(function() {
       if (type == "deliver") {
         window.location.href = "nearbyReceive.html";
       } else {
-        window.location.href = "nearbyDelivery.html";
+        window.location.href = "nearbyReceive.html";
       }
     }
   });
