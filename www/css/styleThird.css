@@ -16,13 +16,14 @@ body {
 #personsList {
   padding-top: 5px;
   margin-top: 10px;
-  /*margin-left: 5%;*/
+  margin-left: 2.5%;
   height: 330px;
-  width: 100%;
+  width: 95%;
 }
 
 .deliveryBoys {
-  margin-top: 60px;
+  margin-top: 50px;
+  font-size: 17px;
   color: rgb(164, 153, 123);
   text-align: center;
 }
@@ -52,13 +53,13 @@ body {
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
    background-color: rgb(251, 238, 205) !important;
    color: rgb(164, 153, 123) !important;
-   border: none !important;
+   border: 1px solid white !important;
 }
 
 .table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
    background-color: rgb( 249, 240, 217) !important;
    color: rgb(164, 153, 123) !important;
-   border: none !important;
+   border: 1px solid white !important;
 }
 
 .table-striped > thead {
