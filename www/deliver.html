@@ -8,7 +8,7 @@
     <link rel="manifest" href="manifest.json">
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styleSecond.css" rel="stylesheet">
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -22,23 +22,12 @@
     <script src="js/functions.js"></script>
   </head>
   <body ng-app="starter">
-    <div class="form-row">
-      <h3 class="formType">Please enter your data:</h3>
-    </div>
+    <div id="thex"></div>
+    <div id="company"></div>
+    <div id="logo"></div>
     <div class="infoPanel">
-      <div class="form-row">
-          <div class="inputParts">
-  		        <input type="text" name="username" placeholder="Name" id="name" value="" class="userInput">
-          </div>
-      </div>
-      <div class="form-row">
-        <div class="inputParts">
-          <input type="text" name="password" placeholder="Number" value="" id="number" class="userInput">
-        </div>
-      </div>
-      <div class="form-row">
-        <input type="submit" name="submit" id="submitBtn" value="Submit" class="inputParts screenBtn">
-      </div>
+      <input type="text" name="username" placeholder="YOUR NAME" id="name" value="" class="firstScreenBtn">
+      <input type="text" name="password" placeholder="YOUR PHONE NUMBER" value="" id="number" class="firstScreenBtn">
     </div>
     <div id="emptyFields">You have to enter all fields</div>
   </body>
