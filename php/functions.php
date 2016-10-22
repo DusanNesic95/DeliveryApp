@@ -1,11 +1,11 @@
 <?php
 	include("config.php");
 
-	function addUser($name, $number, $location, $role) {
+	function addUser($name, $number, $latitude, $longitude,  $role) {
 		global $conn;
-		$insert = "INSERT INTO user (name, number, location, role) VALUES (?,?,?,?)";
+		$insert = "INSERT INTO user (name, number, latitude, longitude, , role) VALUES (?,?,?,?, ?)";
 		$query = $conn->prepare($insert);
-		$query->bind_param('ssss', $name, $number, $location, $role);
+		$query->bind_param('sssss', $name, $number, $latitude, $longitude, $role);
 		$query->execute();
 		$query->close();
 	}

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2016 at 04:45 PM
+-- Generation Time: Oct 22, 2016 at 04:51 PM
 -- Server version: 10.1.8-MariaDB
 -- PHP Version: 5.6.14
 
@@ -30,7 +30,8 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` varchar(250) COLLATE utf8_bin NOT NULL,
   `number` varchar(250) COLLATE utf8_bin NOT NULL,
-  `location` varchar(250) COLLATE utf8_bin NOT NULL,
+  `latitude` varchar(250) COLLATE utf8_bin NOT NULL,
+  `longitude` varchar(250) COLLATE utf8_bin NOT NULL,
   `role` varchar(250) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
