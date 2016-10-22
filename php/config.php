@@ -3,7 +3,7 @@
 	header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization, Token, token, TOKEN');
 	$servername = "localhost";
 	$username = "root";
-	$password = "root";
+	$password = "";
 	$database = "deliveryApp";
 
 	$conn = new mysqli($servername, $username, $password, $database);

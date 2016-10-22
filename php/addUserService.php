@@ -2,13 +2,14 @@
 	header('Access-Control-Allow-Methods: POST');
 	include("functions.php");
 
-	if(isset($_POST['name']) && isset($_POST['number']) && isset($_POST['latitude'])  && isset($_POST['longitude']) && isset($_POST['role'])){
-    echo("helo");
-		$name = $_POST['name'];
-		$number = $_POST['number'];
-		$latitude = $_POST['latitude'];
-		$longitude = $_POST['longitude'];
-		$role = $_POST['role'];
-		echo addUser($name, $number, $latitude, $longitude, $role);
-	}
+	$post = file_get_contents('php://input');
+	$data = json_decode($post);
+
+	$name = $data->name;
+	$number = $data->number;
+	$latitude = $data->latitude;
+	$longitude = $data->longitude;
+	$role = $data->role;
+	
+	echo addUser($name, $number, $latitude, $longitude, $role);
 ?>

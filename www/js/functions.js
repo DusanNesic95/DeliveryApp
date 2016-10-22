@@ -30,26 +30,24 @@ $(document).ready(function() {
           $("#emptyFields").fadeIn().delay(1300).fadeOut(300);
       });
     } else {
-      if (type == "deliver") {
-        window.location.href = "nearbyReceive.html";
-      } else {
-        window.location.href = "nearbyReceive.html";
+      var object = {
+        name : name,
+        number : number,
+        latitude : lat,
+        longitude : long,
+        role : type
       }
+
+      $.post('http://localhost:90/deliveryapp/adduserservice.php', JSON.stringify(object), function(response) {
+        if (response != null) {
+          window.location.href = "nearbyReceive.html";
+        } else {
+          alert("Internet connection problem!");
+        }
+      });
     }
   });
 });
-
-// function initMap() {
-//   var uluru = {lat: -25.363, lng: 131.044};
-//   var map = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 4,
-//     center: uluru
-//   });
-//   var marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map
-//   });
-// }
 
 var options = {
   enableHighAccuracy: true,

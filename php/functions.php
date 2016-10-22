@@ -1,13 +1,29 @@
 <?php
 	include("config.php");
 
-	function addUser($name, $number, $latitude, $longitude,  $role) {
+	// function addUser($name, $number, $latitude, $longitude,  $role) {
+	// 	global $conn;
+	// 	$insert = "INSERT INTO user (name, number, latitude, longitude, role) VALUES (?,?,?,?,?)";
+	// 	$query = $conn->prepare($insert);
+	// 	$query->bind_param('sssss', $name, $number, $latitude, $longitude, $role);
+	// 	$query->execute();
+	// 	$query->close();
+
+	// 	return json_encode("OKAY");
+	// }
+
+	function addUser($name, $number, $latitude, $longitude, $role) {
 		global $conn;
-		$insert = "INSERT INTO user (name, number, latitude, longitude, , role) VALUES (?,?,?,?, ?)";
-		$query = $conn->prepare($insert);
-		$query->bind_param('sssss', $name, $number, $latitude, $longitude, $role);
-		$query->execute();
-		$query->close();
+		$rarray = array();
+		$stmt = $conn->prepare("INSERT INTO user (name, number, latitude, longitude, role) VALUES (?,?,?,?,?)");
+		$stmt->bind_param('sssss', $name, $number, $latitude, $longitude, $role);
+
+		if($stmt->execute()) {
+			$rarray['sucess'] = "ok";
+		} else {
+			$rarray['error'] = "Database connection error";
+		}
+		return json_encode($rarray);
 	}
 
 	function getUsers(){
