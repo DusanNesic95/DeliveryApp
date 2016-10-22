@@ -40,6 +40,7 @@ $(document).ready(function() {
 
       $.post('http://localhost:90/deliveryapp/adduserservice.php', JSON.stringify(object), function(response) {
         if (response != null) {
+          console.log(response);
           window.location.href = "nearbyReceive.html";
         } else {
           alert("Internet connection problem!");

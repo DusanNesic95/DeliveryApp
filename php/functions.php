@@ -23,8 +23,10 @@
 		} else {
 			$rarray['error'] = "Database connection error";
 		}
-		echo getDistance();
-		return json_encode($rarray);
+		$mlat = 43.3209022;
+		$mlong = 21.8957589;
+		$distance = getDistance($latitude, $longitude, $mlat, $mlong);
+		return json_encode($distance);
 	}
 
 	function getUsers(){
@@ -43,17 +45,17 @@
 		return json_encode($rarray);
 	}
 
-	function getDistance(lat1, long1, lat2, long 2) {
-		var r = 6371;
-		var dLat = degToRad(lat2-lat1);
-		var dLong = degToRad(long2-long1);
-		var a = sin(dLat/2) * sin(dLat/2) + cons(degToRad(lat1)) * cos(degToRad(lat2)) * sin(dLong/2) * sin(dLong/2);
-		var c = 2 * atah2(sqrt(a), sqrt(1-a));
-		var d = r * c;
-		return d;
+	function getDistance($lat1, $long1, $lat2, $long2) {
+		$r = 6371;
+		$dLat = degToRad($lat2-$lat1);
+		$dLong = degToRad($long2-$long1);
+		$a = sin($dLat/2) * sin($dLat/2) + cos(degToRad($lat1)) * cos(degToRad($lat2)) * sin($dLong/2) * sin($dLong/2);
+		$c = 2 * atan2(sqrt($a), sqrt(1-$a));
+		$d = $r * $c;
+		return $d;
 	}
 
-	function degToRad(deg) {
-		return deg * (M_PI/180);
+	function degToRad($deg) {
+		return $deg * (M_PI/180);
 	}
 ?>
