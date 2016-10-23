@@ -1,5 +1,31 @@
 $(document).ready(function() {
 
+  $(function () {
+    var body = $('#logo');
+    var backgrounds = [
+      'url(../img/soda.png)',
+      'url(../img/water.png)',
+      'url(../img/chips.png)',
+      'url(../img/chicken.jpg)',
+      'url(../img/ice.jpg)',
+      'url(../img/cola.jpg)',
+      'url(../img/mix.jpg)',
+      'url(../img/peanut.jpg)',
+      'url(../img/sona.png)',
+      'url(../img/meat.jpg)'];
+    var current = 0;
+
+    function nextBackground() {
+        body.css(
+            'background',
+        backgrounds[current = ++current % backgrounds.length]);
+
+        setTimeout(nextBackground, 5000);
+    }
+    setTimeout(nextBackground, 5000);
+    body.css('background', backgrounds[0]);
+  });
+
   var lat = 0;
   var long = 0;
   navigator.geolocation.getCurrentPosition(function(position) {
@@ -18,7 +44,7 @@ $(document).ready(function() {
   });
 
   $("#secondOpt").click(function() {
-    localStorage.setItem('type', 'receive');
+    localStorage.setItem('type', 'receiver');
   });
 
   $("#submit").click(function() {
@@ -38,9 +64,9 @@ $(document).ready(function() {
         role : type
       }
 
-      $.post('http://localhost:90/deliveryapp/adduserservice.php', JSON.stringify(object), function(response) {
+      $.post('http://localhost/deliveryapp/adduserservice.php', JSON.stringify(object), function(response) {
         if (response != null) {
-          console.log(response);
+          localStorage.setItem('array', response);
           window.location.href = "nearbyReceive.html";
         } else {
           alert("Internet connection problem!");
@@ -48,6 +74,20 @@ $(document).ready(function() {
       });
     }
   });
+
+  setTimeout(function() {
+    var data = localStorage.getItem('array');
+    if (data != null && data != "") {
+      var array = JSON.parse(data);
+      var trHTML = '';
+      for (var i = 0; i < array.length; i++) {
+        console.log(array[i].name, array[i].number);
+        trHTML += '<tr><td>' + array[i].name + '</td><td>' + array[i].number + '</td></tr>';
+      }
+      $('#personTable').append(trHTML);
+    }
+    localStorage.setItem('array', "");
+  }, 2000);
 });
 
 var options = {
