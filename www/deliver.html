@@ -9,6 +9,7 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/styleSecond.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -24,11 +25,18 @@
   <body ng-app="starter">
     <div id="thex"></div>
     <div id="company"></div>
-    <div id="logo"></div>
     <div class="infoPanel">
-      <input type="text" name="username" placeholder="YOUR NAME" id="name" value="" class="firstScreenBtn">
-      <input type="text" name="password" placeholder="YOUR PHONE NUMBER" value="" id="number" class="firstScreenBtn">
-      <input type="button" name="submit" value="SUBMIT" id="submit" class="firstScreenBtn">
+      <div class="inputParts">
+        <input type="text" name="username" placeholder="ENTER YOUR NAME" id="name" value="" class="firstScreenBtn">
+        <i class="fa fa-user icons"></i>
+      </div>
+      <div class="inputParts">
+        <input type="text" name="password" placeholder="ENTER YOUR NUMBER" value="" id="number" class="firstScreenBtn">
+        <i class="fa fa-lock icons"></i>
+      </div>
+      <!-- <input type="text" name="username" placeholder="ENTER YOUR NAME" id="name" value="" class="firstScreenBtn"> -->
+      <!-- <input type="text" name="password" placeholder="ENTER YOUR NUMBER" value="" id="number" class="firstScreenBtn"> -->
+      <input type="button" name="submit" value="CONNECT ME" id="submit" class="firstScreenBtn">
     </div>
     <div id="emptyFields">You have to enter all fields</div>
     <div id="hidden_form_container" style="display:none;"></div>

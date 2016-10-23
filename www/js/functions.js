@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(function () {
     var body = $('#logo');
     var backgrounds = [
-      'url(../img/soda.png)',
+      'url(../img/soda1.png)',
       'url(../img/water.png)',
       'url(../img/chips.png)',
       'url(../img/chicken.jpg)',

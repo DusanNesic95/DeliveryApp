@@ -6,17 +6,52 @@ body {
   /*background-color: white;*/
 }
 
-.firstScreenBtn {
-  background-image: url("../img/zutodugme.png");
-  background-size: 1000%;
-  background-position: 50% 79%;
-  background-repeat: no-repeat;
+.inputParts {
+  border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  width: 80%;
+  width: 90%;
   height: 50px !important;
-  color: rgb(175, 166, 99);
+  color: #bbbcbf;
+  font-size: 18px;
+  display: block;
+  border: 1px black !important;
+  text-align: left;
+  padding-left: 10px !important;
+}
+
+.firstScreenBtn {
+  /*border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;*/
+  width: 90%;
+  height: 50px !important;
+  color: #bbbcbf;
+  font-size: 18px;
+  display: inline;
+  border: none;
+  text-align: left;
+  padding-left: 10px !important;
+}
+
+.icons {
+  text-align: left;
+  font-size: 72px;
+  color: #bbbcbf;
+  display: inline;
+}
+
+#submit {
+  background-color: #FEDB65;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 50px !important;
+  color: #bbbcbf;
   font-size: 18px;
   display: block;
   border: none;
@@ -121,6 +156,15 @@ a {
 
 .infoPanel {
     margin-top: 100px;
+    margin-left: 5%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    width: 90%;
+    height: 40%;
+    background-color: #EEEFF1;
+    border-radius: 3px;
 }
 
 .formType {
@@ -189,17 +233,17 @@ a {
 }
 
 ::-webkit-input-placeholder {
-   color: rgb(175, 166, 99) !important;
+   color: #bbbcbf !important;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgb(175, 166, 99) !important;
+   color: #bbbcbf !important;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgb(175, 166, 99) !important;
+   color: #bbbcbf !important;
 }
 
 :-ms-input-placeholder {
-   color: rgb(175, 166, 99) !important;
+   color: #bbbcbf !important;
 }

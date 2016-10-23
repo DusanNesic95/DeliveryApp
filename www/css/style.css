@@ -1,6 +1,6 @@
 /* Empty. Add your own CSS if you like */
 body {
-  background-image: url("../img/rozepozadina.png");
+  background-color: #F6F8FC;
   background-size: 100%;
   background-repeat: no-repeat;
   /*background-color: white;*/
@@ -79,14 +79,15 @@ body {
 }
 
 #logo {
-  background-image: url("../img/soda.png");
-  background-size: 550%;
-  background-position: 13% 49%;
+  /*background-image: url("../img/soda.png");
+  background-position: 13% 49%;*/
+  background-size: 100%;
   margin-bottom: 60px;
   margin-top: -10px;
   width: 70%;
-  height: 210px;
+  height: 220px;
   margin-left: 15%;
+  background-repeat: no-repeat;
 }
 
 a {
