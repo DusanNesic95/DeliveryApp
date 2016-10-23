@@ -19,17 +19,15 @@
 		$stmt->bind_param('sssss', $name, $number, $latitude, $longitude, $role);
 
 		if($stmt->execute()) {
-			$rarray['sucess'] = "ok";
+			$rarray = getUsers($latitude, $longitude, $role);
 		} else {
-			$rarray['error'] = "Database connection error";
+			$rarray = "Database connection error";
 		}
-		$mlat = 43.3209022;
-		$mlong = 21.8957589;
-		$distance = getDistance($latitude, $longitude, $mlat, $mlong);
-		return json_encode($distance);
+
+		return json_encode($rarray);
 	}
 
-	function getUsers(){
+	function getUsers($latitude, $longitude, $role){
 		global $conn;
 		$rarray = array();
 		$result = $conn->query("SELECT * FROM user");
@@ -41,8 +39,16 @@
 				array_push($users,$row);
 			}
 		}
-		$rarray['users'] = $users;
-		return json_encode($rarray);
+		$rarray = $users;
+		$newAray = array();
+		for ($i = 0; $i < count($rarray); $i++) {
+			if ($role != $rarray[$i]['role']) {
+				if (getDistance($latitude, $longitude, $rarray[$i]['latitude'], $rarray[$i]['longitude']) <= 2000) {
+					array_push($newAray, $rarray[$i]);
+				}
+			}
+		}
+		return $newAray;
 	}
 
 	function getDistance($lat1, $long1, $lat2, $long2) {
