@@ -7,50 +7,46 @@ body {
 }
 
 .inputParts {
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90% !important;
+  margin-top: 10px;
   margin-bottom: 10px;
-  width: 90%;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 5%;
   height: 50px !important;
-  color: #bbbcbf;
-  font-size: 18px;
-  display: block;
-  border: 1px black !important;
-  text-align: left;
-  padding-left: 10px !important;
+  border: none !important;
 }
 
 .firstScreenBtn {
-  /*border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;*/
-  width: 90%;
-  height: 50px !important;
+  display: block;
+  float: left;
+  width: 84% !important;
+  background-color: transparent;
   color: #bbbcbf;
   font-size: 18px;
-  display: inline;
+  height: 50px !important;
   border: none;
   text-align: left;
-  padding-left: 10px !important;
+  padding-left: 5px !important;
 }
 
 .icons {
   text-align: left;
-  font-size: 72px;
-  color: #bbbcbf;
-  display: inline;
+  font-size: 28px !important;
+  color: #bbbcbf !important;
+  display: block;
+  float: left;
+  margin-top: 10px !important;
+  margin-left: 15px !important;
 }
 
 #submit {
+  width: 90% !important;
+  height: 50px !important;
   background-color: #FEDB65;
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  width: 90%;
-  height: 50px !important;
+  margin-left: 5%;
+  margin-bottom: 30px;
   color: #bbbcbf;
   font-size: 18px;
   display: block;
@@ -129,42 +125,15 @@ a {
     text-decoration: none !important;
 }
 
-.inputParts {
-    margin-top: 40px;
-    margin-left: 10%;
-    width: 80%;
-    height: 60px;
-    color: white;
-    border: 2px solid #c09f80;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
-
-.userInput {
-  padding-top: 15px !important;
-  padding-left: 15px !important;
-  width: 85%;
-  font-family: verdana;
-  font-stretch: wider;
-  font-size: 1.4em !important;
-  color: #c09f80 !important;
-  height: 50px;
-  font-weight: 300;
-  background: transparent;
-}
-
 .infoPanel {
-    margin-top: 100px;
-    margin-left: 5%;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    width: 90%;
-    height: 40%;
-    background-color: #EEEFF1;
-    border-radius: 3px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 94%;
+  height: 42%;
+  background-color: #EEEFF1;
+  border-radius: 3px;
 }
 
 .formType {
