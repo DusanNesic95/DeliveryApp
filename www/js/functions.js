@@ -64,7 +64,7 @@ $(document).ready(function() {
         role : type
       }
 
-      $.post('http://localhost/deliveryapp/adduserservice.php', JSON.stringify(object), function(response) {
+      $.post('http://192.168.1.10:90/deliveryapp/adduserservice.php', JSON.stringify(object), function(response) {
         if (response != null) {
           localStorage.setItem('array', response);
           window.location.href = "nearbyReceive.html";
