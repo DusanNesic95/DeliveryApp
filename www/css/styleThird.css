@@ -22,32 +22,47 @@ body {
 }
 
 .deliveryBoys {
-  margin-top: 50px;
+  margin-top: 170px;
   font-size: 17px;
   color: rgb(164, 153, 123);
   text-align: center;
 }
 
+.header {
+  width: 100%;
+  top: 0;
+  height: auto;
+  display: block;
+}
+
 #thex {
-  background-image: url("../img/zadnjixic.png");
-  background-size: 400%;
-  background-position: 91% 19%;
-  width: 90%;
-  height: 50px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+
+.rect {
+  background-color: #FDF5DF;
+  color: #9B8D6B;
+  width: 26px;
+  height: 26px;
+  margin-left: 70%;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 3px;
+  padding-top: 3px;
 }
 
 #company {
+  display: block;
+  float: left;
   background-image: url("../img/cakna.png");
-  background-size: 550%;
+  background-size: 450%;
   background-position: 49% 25%;
-  width: 85%;
+  width: 50%;
   height: 100px;
-  margin-top: -10px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
